@@ -1,0 +1,23 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../../client/public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "secret": "Sm0J4FH4nTvOXQw4e951zBoRNrC5kuDo61KMRFYyZmoTHxvqtSASEfEgcR36iG93",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "google": {
+      "clientID": "your google client id",
+      "clientSecret": "your google client secret"
+    }
+  },
+  "mongodb": "mongodb://localhost:27017/workshops"
+}
